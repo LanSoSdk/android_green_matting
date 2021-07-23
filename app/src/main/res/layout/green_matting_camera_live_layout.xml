@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shoot_video_container_all_view_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <com.lansosdk.videoeditor.LSOCameraLive
+            android:id="@+id/shoot_video_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <com.lansosdk.videoeditor.LSOLayerTouchView
+                android:id="@+id/shoot_video_camera_touch_view"
+                android:layout_width="392dp"
+                android:layout_height="match_parent" />
+
+        </com.lansosdk.videoeditor.LSOCameraLive>
+
+
+
+    <Button
+        android:id="@+id/id_green_button_switch"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/icon_shoot_matting"/>
+
+
+    <ImageView
+        android:id="@+id/shoot_video_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon_shoot_close" />
+
+
+    <LinearLayout
+        android:layout_above="@+id/id_green_strong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="强度(strong)"/>
+
+        <SeekBar
+            android:id="@+id/id_green_strong_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/id_green_strong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="色彩保护(color hold)"/>
+
+        <SeekBar
+            android:id="@+id/id_green_strong_color_hold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="80"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
