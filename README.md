@@ -1,14 +1,10 @@
 # android_green_matting
 android camera green matting, android版本的绿幕抠图
-# ios_green_matting
-ios版本的绿幕抠图, 各种绿色完整的抠去. 
-
 - SDK是我们商用版本, 付费. 
 - 此为最简单的演示, 方便您评估使用.
 - 我们完整的演示请下载:
 - https://www.pgyer.com/LanSongIOS
 - https://www.pgyer.com/LanSongAndroid
-
 
 
 
